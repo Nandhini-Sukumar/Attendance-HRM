@@ -25,7 +25,7 @@ export default function header(){
                             <div>
                               <Icon.Bell className="bellIcon"/>
                                
-                            </div>
+                        </div>
 
 
 
