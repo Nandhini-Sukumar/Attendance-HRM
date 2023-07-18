@@ -8,7 +8,7 @@
 
 .cardContent{
     border:1px solid grey;
-    height: 100px;
+    height: 120px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(33,33,33,.2);
 }
@@ -34,6 +34,9 @@
     height: calc(100vh - 60px);
     // background-image: linear-gradient(#BCFb69,#26BBAC);
     background-color:  #FAFAFA;
+}
+.dateAlign{
+    font-size: 15px;
 }
 // .progressBar .css-5xe99f-MuiLinearProgress-bar1{
 //     background-color: red ;

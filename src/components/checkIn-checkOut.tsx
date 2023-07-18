@@ -10,6 +10,8 @@ export default function CheckIn() {
   let minutes :any
   let hours : any
 
+  let current = new Date();
+  let getdate = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 
     const [btnChange,setbtnChange] = useState('check In') // Button Change
     const [progress,setprogress] = useState(0) // Progress
@@ -32,7 +34,7 @@ export default function CheckIn() {
             const diff = Math.random() * 10;
             return Math.min(oldProgress + diff, 100);
           });
-        }, 1000);
+        }, 280000); //280000
     
         return () => {
           clearInterval(timer);
@@ -124,6 +126,9 @@ export default function CheckIn() {
                             <span>
                             {formatTime(seconds)}
                             
+                            </span><br/>
+                            <span className="dateAlign">
+                              {getdate}
                             </span>
                             <LinearProgress variant="determinate" value={progress} className="progressBar "/>
                             
